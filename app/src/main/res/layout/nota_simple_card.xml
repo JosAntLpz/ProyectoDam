@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardElevation="4dp"
+    card_view:cardUseCompatPadding="true"
+    android:layout_height="@dimen/card_height"
+    card_view:cardBackgroundColor="@color/colorNotaSimple">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:id="@+id/cbRealizado"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:checked="false"
+            android:textSize="14sp" />
+
+        <TextView
+            android:text="Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvText"
+            android:textStyle="normal|bold"
+            android:textSize="24sp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/cbRealizado" />
+
+        <TextView
+            android:text="Fecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvFecha"
+            android:textStyle="normal|bold"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/cbRealizado" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                card_view:srcCompat="@drawable/ic_menu_gallery"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/ivImage"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:padding="5dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                card_view:srcCompat="@drawable/ic_mic_black_24dp"
+                android:id="@+id/ivAudio"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:padding="5dp" />
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

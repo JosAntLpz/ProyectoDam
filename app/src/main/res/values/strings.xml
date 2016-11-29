@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Quip</string>
+    // Strings botones
+    <string name="ok">Aceptar</string>
+    <string name="cancel">Cancelar</string>
+    // Strings dialogo borrar
+    <string name="mensaje_confirm_borrar">¿Seguro que quieres borrar esta nota?</string>
+    <string name="etiqueta_dialogo_borrar">Eliminar: </string>
+    // nota
+    <string name="nota">Nota</string>
+    <string name="titulo">Titulo</string>
+    //
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    //Strings del header del menu desplegable
+    <string name="tituloNavHeader">Quip</string>
+    <string name="subTituloNavHeader">2Dam</string>
+    //String navigation drawer
+    <string name="nav_all">Todas</string>
+    <string name="nav_notas">Notas</string>
+    <string name="nav_listas">Listas</string>
+    <string name="nav_recordatorios">Recordatorios</string>
+    <string name="nav_completadas">Completadas</string>
+    <string name="nav_no_completadas">No Completadas</string>
+    //Strings de los bottom sheets
+    <string name="tituloBSVistaNota">Desde...</string>
+    <string name="BtAddFoto">Camara</string>
+    <string name="BtAddGaleria">Galeria</string>
+    <string name="tituloBSVistaQuip">Crear...</string>
+    <string name="BtAddNota">Nota</string>
+    <string name="BtAddlista">Lista</string>
+    <string name="tarea">tarea</string>
+
+
+</resources>
