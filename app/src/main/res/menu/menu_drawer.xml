@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/nuevo"
+        android:icon="@drawable/ic_add_black_24dp"
+        app:showAsAction="always"
+        android:title="" />
+    <item
+        android:id="@+id/lienzo"
+        android:icon="@drawable/ic_create_black_24dp"
+        app:showAsAction="always"
+        android:title="">
+
+        <menu>
+            <group>
+                <item
+                    android:id="@+id/grande"
+                    android:title="Grande"
+                    app:showAsAction="always"
+                    />
+                <item
+                    android:id="@+id/mediano"
+                    android:title="Mediano"
+                    app:showAsAction="always"
+                    />
+                <item
+                    android:id="@+id/pequeno"
+                    android:title="pequeño"
+                    app:showAsAction="always"
+                    />
+
+            </group>
+
+        </menu>
+
+    </item>
+
+    <item
+        android:id="@+id/goma"
+        android:icon="@drawable/goma_24dp"
+        app:showAsAction="always"
+        android:title="GUARDAR"/>
+    <item
+        android:id="@+id/guardar"
+        android:icon="@drawable/ic_check_black_24dp"
+        app:showAsAction="always"
+        android:title="GUARDAR" />
+</menu>

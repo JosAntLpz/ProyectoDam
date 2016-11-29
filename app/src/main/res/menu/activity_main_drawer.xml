@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_all"
+            android:icon="@drawable/ic_all_notes"
+            android:title="@string/nav_all" />
+        <item
+            android:id="@+id/nav_notas"
+            android:icon="@drawable/ic_note_black_24dp"
+            android:title="@string/nav_notas" />
+        <item
+            android:id="@+id/nav_listas"
+            android:icon="@drawable/ic_format_list_bulleted_black_24dp"
+            android:title="@string/nav_listas" />
+        <item
+            android:id="@+id/nav_recordatorios"
+            android:icon="@drawable/ic_alarm_black_24dp"
+            android:title="@string/nav_recordatorios" />
+
+    </group>
+    <item android:title="TITULO">
+        <menu>
+            <item
+                android:id="@+id/nav_completadas"
+                android:icon="@drawable/ic_check_box_black_24dp"
+                android:title="@string/nav_completadas" />
+            <item
+                android:id="@+id/nav_no_completadas"
+                android:icon="@drawable/ic_check_box_outline_blank_black_24dp"
+                android:title="@string/nav_no_completadas" />
+        </menu>
+    </item>
+</menu>

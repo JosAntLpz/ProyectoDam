@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:theme="?attr/actionBarTheme"
+        android:minHeight="?attr/actionBarSize"
+        android:id="@+id/toolbar2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/ic_picture_as_pdf_black_24dp"
+        android:id="@+id/btPDF"
+        android:layout_marginEnd="31dp"
+        android:layout_marginTop="11dp"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/btSave" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/ic_check_black_24dp"
+        android:id="@+id/btSave"
+        android:layout_alignTop="@+id/btPDF"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tablelayout"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                app:srcCompat="@drawable/ic_menu_camera"
+                android:id="@+id/ivAddFoto"
+                android:layout_weight="0.25"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_menu_gallery"
+                android:padding="10dp"
+                android:id="@+id/ivAddGaleria"
+                android:layout_weight="0.25"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_create_black_24dp"
+                android:padding="10dp"
+                android:id="@+id/ivAddDibujo"
+                android:layout_weight="0.25"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_mic_black_24dp"
+                android:padding="10dp"
+                android:id="@+id/ivAddAudio"
+                android:layout_weight="0.25"/>
+
+            <!--<ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_menu_manage"
+                android:padding="10dp"
+                android:id="@+id/imageView7"
+                android:layout_weight="0.25"/>-->
+        </TableRow>
+    </TableLayout>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/ic_alarm_black_24dp"
+        android:layout_marginEnd="34dp"
+        android:id="@+id/btRecordatorio"
+        android:layout_alignTop="@+id/btPDF"
+        android:layout_toStartOf="@+id/btPDF" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tablelayout"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:layout_gravity="right">
+
+            <ImageView
+                android:layout_width="100dp"
+                app:srcCompat="@drawable/ic_mic_off_black_24dp"
+                android:id="@+id/ivDetenerAudio"
+                android:layout_alignParentTop="true"
+                android:layout_toStartOf="@+id/btSave"
+                android:layout_weight="0.30"
+                android:layout_height="30dp"
+                android:paddingRight="10dp"
+                android:visibility="gone" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvRecordatorio"
+                android:textAllCaps="false"
+                android:textStyle="normal|italic"
+                android:textAlignment="viewStart" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_below="@+id/toolbar2"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etTitulo"
+                android:hint="@string/titulo"
+                android:textStyle="normal|bold"
+                android:layout_below="@+id/toolbar2"
+                android:layout_alignParentStart="true" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/scrollView3"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_weight="1">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:ems="10"
+                    android:id="@+id/etNota"
+                    android:hint="@string/nota"
+                    android:background="@android:color/transparent"
+                    android:paddingLeft="6dp"
+                    android:paddingRight="6dp"
+                    android:layout_below="@+id/etTitulo"
+                    android:layout_alignParentStart="true" />
+            </ScrollView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/ic_android_black_24dp"
+                android:id="@+id/imagenCargada"
+                android:layout_weight="0.5"
+                android:layout_width="match_parent"
+                android:visibility="visible"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:paddingLeft="5dp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/btPlay"
+                android:visibility="visible"
+                android:background="@android:drawable/ic_lock_silent_mode_off"
+                android:text="Play"
+                android:layout_weight="0.5" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
